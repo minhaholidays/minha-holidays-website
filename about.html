@@ -8,7 +8,7 @@
 <style>
 :root{--forest:#064e35;--leaf:#087f50;--mint:#e8f8ef;--gold:#f5c34b;--ink:#102d25}
 body{background:#f2faf5;color:var(--ink)}
-.profile-hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:48px 18px 66px;background:linear-gradient(110deg,#063d2be8,#08794fc4),url('assets/destinations/wayanad.jpg') center/cover}
+.profile-hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:48px 18px 66px;background:linear-gradient(120deg,#064e35,#087f50,#16a36b)}
 .profile-logo{width:88px;height:88px;object-fit:contain;border-radius:50%;padding:7px;background:#fff;box-shadow:0 12px 28px #002e1b66}
 .profile-hero h1{font-size:clamp(28px,5vw,44px);margin:10px 0 4px;color:#fff}
 .profile-hero p{margin:5px auto;max-width:680px;color:#effff4}
@@ -29,13 +29,22 @@ body{background:#f2faf5;color:var(--ink)}
 .benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .benefit{padding:14px;border:1px solid #dceee3;border-radius:15px;background:#f6fff9;font-weight:800;color:#145338}
 .benefit span{display:block;color:#678276;font-size:12px;font-weight:500;margin-top:4px}
-.area-banner{border-radius:18px;overflow:hidden;min-height:145px;display:flex;align-items:center;padding:22px;color:#fff;background:linear-gradient(90deg,#03462fe8,#087b55a8),url('assets/destinations/munnar.jpg') center/cover}
+.area-banner{border-radius:18px;overflow:hidden;min-height:145px;display:flex;align-items:center;padding:22px;color:#fff;background:linear-gradient(120deg,#075638,#0b8a5b,#16a36b)}
 .area-banner h3{font-size:24px;margin:0 0 5px;color:white}.area-banner p{margin:0;color:#f0fff5}
 .profile-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
 .profile-actions a{display:inline-block;padding:11px 17px;border-radius:30px;background:#07844f;color:#fff;font-weight:900}
 .profile-actions a.secondary{background:#f5c34b;color:#173b2c}
 @media(max-width:700px){.profile-hero{padding:36px 14px 55px}.profile-main{padding:0 11px}.profile-panel{padding:15px;border-radius:18px}.vehicle-mini-grid{grid-template-columns:1fr 1fr}.vehicle-mini-card img{height:105px}}
 @media(max-width:390px){.profile-grid{grid-template-columns:1fr 1fr;gap:8px}.profile-tile{padding:10px;gap:8px;min-height:80px}.profile-tile .ico{width:38px;height:38px;font-size:20px}.profile-tile b{font-size:13px}.profile-tile small{font-size:11px}.vehicle-mini-grid{grid-template-columns:1fr}.benefit-grid{grid-template-columns:1fr}}
+
+/* Final responsive refinements for the Minha Holidays profile */
+body{background:linear-gradient(180deg,#effaf2 0%,#f8fcf8 45%,#eaf6ed 100%)}
+.profile-hero{background:linear-gradient(120deg,#064e35,#087f50,#16a36b)}
+.profile-panel{box-shadow:0 12px 30px rgba(12,76,45,.10)}
+.profile-tile{transition:transform .18s,box-shadow .18s}
+.profile-tile:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(12,76,45,.12)}
+@media(max-width:700px){.profile-hero{padding:30px 14px 48px}.profile-logo{width:76px;height:76px}.profile-main{margin-top:-22px}.profile-panel{margin-bottom:13px}.profile-actions a{flex:1 1 180px;text-align:center}}
+@media(max-width:390px){.profile-grid{grid-template-columns:1fr 1fr}.profile-tile{min-width:0}.profile-tile b{overflow-wrap:anywhere}}
 </style>
 </head>
 <body>
